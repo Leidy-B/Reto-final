@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet"href="style.css"></head>
+    
+    
+</head>
+<body>
+    <h1>Encriptador de Textos</h1>
+    <div class="container">
+        <div class="left-section">
+       
+            <textarea id="textInput" rows="4" placeholder="Ingresa el texto aquí..."></textarea>>
+            <div class="button-group">
+                <button class="encrypt-button" onclick="encryptText()">Encriptar</button>
+                <button class="decrypt-button" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="right-section">
+                <img id="placeholder-image" src="./animado/lola.png" alt="animado" style="display:block;"> <!-- Imagen visible por defecto -->
+                <textarea id="result" rows="4" readonly placeholder="Resultado aparecerá aquí..." style="display:none;"></textarea>
+                <button onclick="copyToClipboard()" style="display:none;">Copiar al portapapeles</button>
+            </div>
+            
+    </div>
 
+    <footer>
+        <p>&copy; Leidy Natalia Beltrán. Reto encriptador 2024.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
